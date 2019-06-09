@@ -79,11 +79,8 @@ section {
 
 
 .full-3 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: 100%;
-    width: 150%;
+    width: 100%;
 }
 
 .full-2 img {
