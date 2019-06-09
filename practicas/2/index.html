@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,18 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
 
     <style>
-
         * {
             font-family: 'Courgette', sans-serif;
             color: #fff;
             box-sizing: border-box;
             margin: 0;
         }
-    
+
         .container {
             background: #F5EBDB;
             display: flex;
-            border-radius: 3px;;
+            border-radius: 3px;
+            ;
             box-shadow: 0px 1px 3px 1px rgba(134, 133, 133, 0.458);
             margin: 0 8px 10px 8px;
         }
@@ -33,7 +34,6 @@
             border-radius: 5px;
             box-shadow: 0px 1px 3px 1px rgba(143, 141, 141, 0.829);
         }
-
 
         .item1 {
             padding: 0px;
@@ -64,7 +64,7 @@
             height: 4rem;
             background: #84DCC6;
             margin-bottom: 20px;
-            box-shadow:  0px 1px 7px 1px rgba(65, 64, 64, 0.849);
+            box-shadow: 0px 1px 7px 1px rgba(65, 64, 64, 0.849);
             text-align: center;
         }
 
@@ -76,14 +76,17 @@
 
         .circle {
             background: #FF5376;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             position: fixed;
-            bottom: 17px;
-            right: 17px;
-            box-shadow:  0px 1px 7px 1px rgba(65, 64, 64, 0.849);
+            bottom: 30px;
+            right: 30px;
+            /*right: 50%;*/
+            box-shadow: 0px 1px 7px 1px rgba(65, 64, 64, 0.849);
             text-align: center;
+            z-index: 2;
+            /*transform: translateX(50%)*/
         }
 
         .circle span {
@@ -94,13 +97,12 @@
             display: inline-block;
             position: absolute;
             top: 40%;
-            right: 25%;
+            right: 28%;
         }
-
-    
     </style>
 
 </head>
+
 <body>
 
     <div class="circle">
@@ -130,87 +132,86 @@
 
     <div class="container row-2">
 
-            <div class="item item1">
-                <div class="item nested">Alfajores</div>
-                <div class="item nested">$125.000 (+)</div>
-            </div>
-    
-            <div class="item item2">
-                <img src="002.jpg" alt="hello">
-            </div>
-    
+        <div class="item item1">
+            <div class="item nested">Alfajores</div>
+            <div class="item nested">$125.000 (+)</div>
         </div>
 
-        <div class="container">
+        <div class="item item2">
+            <img src="002.jpg" alt="hello">
+        </div>
 
-                <div class="item item1">
-                    <div class="item nested">Leche mila</div>
-                    <div class="item nested">$125.000 (+)</div>
-                </div>
-        
-                <div class="item item2">
-                    <img src="004.jpg" alt="hello">
-                </div>
-        
-            </div>
+    </div>
 
-            <div class="container row-2">
+    <div class="container">
 
-                    <div class="item item1">
-                        <div class="item nested">Tortas</div>
-                        <div class="item nested">$125.000 (+)</div>
-                    </div>
-            
-                    <div class="item item2">
-                        <img src="002.jpg" alt="hello">
-                    </div>
-            
-                </div>
+        <div class="item item1">
+            <div class="item nested">Leche mila</div>
+            <div class="item nested">$125.000 (+)</div>
+        </div>
 
-                <div class="container">
+        <div class="item item2">
+            <img src="004.jpg" alt="hello">
+        </div>
 
-                        <div class="item item1">
-                            <div class="item nested">Leche mila</div>
-                            <div class="item nested">$125.000 (+)</div>
-                        </div>
-                
-                        <div class="item item2">
-                            <img src="004.jpg" alt="hello">
-                        </div>
-                
-                    </div>
+    </div>
 
-                    
+    <div class="container row-2">
 
-        <div class="container">
+        <div class="item item1">
+            <div class="item nested">Tortas</div>
+            <div class="item nested">$125.000 (+)</div>
+        </div>
 
-                <div class="item item1">
-                    <div class="item nested">Leche mila</div>
-                    <div class="item nested">$125.000 (+)</div>
-                </div>
-        
-                <div class="item item2">
-                    <img src="004.jpg" alt="hello">
-                </div>
-        
-            </div>
+        <div class="item item2">
+            <img src="002.jpg" alt="hello">
+        </div>
 
-            
+    </div>
 
-        <div class="container">
+    <div class="container">
 
-                <div class="item item1">
-                    <div class="item nested">Leche mila</div>
-                    <div class="item nested">$125.000 (+)</div>
-                </div>
-        
-                <div class="item item2">
-                    <img src="004.jpg" alt="hello">
-                </div>
-        
-            </div>
+        <div class="item item1">
+            <div class="item nested">Leche mila</div>
+            <div class="item nested">$125.000 (+)</div>
+        </div>
 
-                
-    
+        <div class="item item2">
+            <img src="004.jpg" alt="hello">
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="item item1">
+            <div class="item nested">Leche mila</div>
+            <div class="item nested">$125.000 (+)</div>
+        </div>
+
+        <div class="item item2">
+            <img src="002.jpg" alt="hello">
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="item item1">
+            <div class="item nested">Leche mila</div>
+            <div class="item nested">$125.000 (+)</div>
+        </div>
+
+        <div class="item item2">
+            <img src="004.jpg" alt="hello">
+        </div>
+
+    </div>
+
+    <br><br><br><br><br>
+
+
+
 </body>
+
 </html>
