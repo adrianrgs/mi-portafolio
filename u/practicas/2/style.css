@@ -1,0 +1,205 @@
+* {
+    font-family: 'Courgette', sans-serif;
+    color: #000;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    background: #F5EBDB;
+    display: flex;
+    border-radius: 3px;
+    ;
+    box-shadow: 0px 1px 3px 1px rgba(134, 133, 133, 0.458);
+    margin: 0 8px 10px 8px;
+}
+
+.item {
+    background: #84DCC6;
+    flex: 1;
+    padding: 50px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 1px rgba(143, 141, 141, 0.829);
+}
+
+.item1 {
+    padding: 0px;
+}
+
+.nested {
+    background: #78406A;
+    margin: 8px;
+    padding: 14px;
+    box-shadow: 0px 1px 7px 1px rgba(65, 64, 64, 0.849);
+}
+
+.item2 {
+    align-self: flex-start;
+    padding: 0;
+    height: 118px;
+    overflow: hidden;
+    margin-right: 0;
+    order: -1;
+}
+
+.item2 img {
+    max-width: 100%;
+    transform: translateY(-10%)
+}
+
+.header {
+    height: 4rem;
+    background: #84DCC6;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 7px 1px rgba(65, 64, 64, 0.849);
+    text-align: center;
+}
+
+.header h3 {
+    color: #78406A;
+    font-size: 30px;
+    transform: translateY(30%)
+}
+
+/*
+.circle {
+    background: #FF5376;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /*right: 50%;
+    box-shadow: 0px 1px 7px 1px rgba(65, 64, 64, 0.849);
+    text-align: center;
+    z-index: 2;
+    /*transform: translateX(50%)
+}
+
+.circle span {
+    width: 27px;
+    height: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 28%;
+}*/
+
+/********************************************************/
+/* NAVIGATION */
+
+.navigation__checkbox {
+    display: none;
+}
+
+.navigation__button {
+    background-color: #84DCC6;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 200;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .2)
+}
+
+.navigation__button span {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 1rem;
+}
+
+.navigation__background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    background-image: radial-gradient(#ff5376, #fd9aae);
+    z-index: 99;
+    transition: transform .8s;
+}
+
+.navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 101;
+    opacity: 0;
+    width: 0;
+    transition: opacity .8s;
+    transition: left .2s;
+    -webkit-transition: left .2s;
+    -moz-transition: left .2s;
+    -ms-transition: left .2s;
+    -o-transition: left .2s;
+}
+
+.navigation__list {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+
+    width: 100%;
+}
+
+.navigation__item {
+    margin-bottom: 1rem
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+    display: inline-block;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 250%;
+    transition: all .4s;
+}
+
+.navigation__link:hover,
+.navigation__link:hover {
+    background-position: 100%;
+    color: #ff5376;
+    transform: translateX(.6rem);
+    -webkit-transform: translateX(.6rem);
+    -moz-transform: translateX(.6rem);
+    -ms-transform: translateX(.6rem);
+    -o-transform: translateX(.6rem);
+}
+
+.navigation__checkbox:checked~.navigation__background {
+    transform: scale(80);
+}
+
+.navigation__checkbox:checked~.navigation__nav {
+    width: 100%;
+    opacity: 1;
+    left: 0;
+}
+
+.navigation__checkbox:checked~.navigation__buttom {
+    background-color: #fff;
+}

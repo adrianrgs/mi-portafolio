@@ -5,109 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flexbox grid</title>
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            font-family: 'Courgette', sans-serif;
-            color: #fff;
-            box-sizing: border-box;
-            margin: 0;
-        }
-
-        .container {
-            background: #F5EBDB;
-            display: flex;
-            border-radius: 3px;
-            ;
-            box-shadow: 0px 1px 3px 1px rgba(134, 133, 133, 0.458);
-            margin: 0 8px 10px 8px;
-        }
-
-        .item {
-            background: #84DCC6;
-            flex: 1;
-            padding: 50px;
-            margin: 10px;
-            text-align: center;
-            border-radius: 5px;
-            box-shadow: 0px 1px 3px 1px rgba(143, 141, 141, 0.829);
-        }
-
-        .item1 {
-            padding: 0px;
-        }
-
-        .nested {
-            background: #78406A;
-            margin: 8px;
-            padding: 14px;
-            box-shadow: 0px 1px 7px 1px rgba(65, 64, 64, 0.849);
-        }
-
-        .item2 {
-            align-self: flex-start;
-            padding: 0;
-            height: 118px;
-            overflow: hidden;
-            margin-right: 0;
-            order: -1;
-        }
-
-        .item2 img {
-            max-width: 100%;
-            transform: translateY(-10%)
-        }
-
-        .header {
-            height: 4rem;
-            background: #84DCC6;
-            margin-bottom: 20px;
-            box-shadow: 0px 1px 7px 1px rgba(65, 64, 64, 0.849);
-            text-align: center;
-        }
-
-        .header h3 {
-            color: #78406A;
-            font-size: 30px;
-            transform: translateY(30%)
-        }
-
-        .circle {
-            background: #FF5376;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            /*right: 50%;*/
-            box-shadow: 0px 1px 7px 1px rgba(65, 64, 64, 0.849);
-            text-align: center;
-            z-index: 2;
-            /*transform: translateX(50%)*/
-        }
-
-        .circle span {
-            width: 27px;
-            height: 10px;
-            border-top: 1px solid white;
-            border-bottom: 1px solid white;
-            display: inline-block;
-            position: absolute;
-            top: 40%;
-            right: 28%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox grid</title>
 
 </head>
 
 <body>
 
-    <div class="circle">
-        <span></span>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Modelo de Negocio</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Productos</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Carrito</a></li>
+            </ul>
+        </nav>
     </div>
+
+
+
+    <!--<div class="circle">
+        <span></span>
+    </div>-->
 
     <header>
 
