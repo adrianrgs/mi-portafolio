@@ -49,42 +49,41 @@ $(function () {
     ===============================*/
 $(function () {
     $('#services-tabs').responsiveTabs({
-    startCollapsed: 'accordion',
-    animation: 'slide'
-});
+        startCollapsed: 'accordion',
+        animation: 'slide'
+    });
 });
 
 /* ===============================
             Portfolio ISOTOPE
     ===============================*/
 $(window).on('load', function () {
-    
+
     // iTIALIZE iSOTOPE
-    $('#isotope-container').isotope({
-    });
-    
+    $('#isotope-container').isotope({});
+
     // filter items on button click
-    $("#isotope-filters").on('click', 'button', function(){
-        
+    $("#isotope-filters").on('click', 'button', function () {
+
         // get filter value
         var filterValue = $(this).attr('data-filter');
-        
+
         // filter items
         $('#isotope-container').isotope({
             filter: filterValue
         });
-        
+
         // active button
         $('#isotope-filters').find('.active').removeClass('active')
         $(this).addClass('active')
     });
-    
+
 });
 
 /* ===============================
             Magnific POPUP
     ===============================*/
-$(function(){
+$(function () {
     $("#portfolio-wrapper").magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
@@ -95,18 +94,18 @@ $(function(){
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ===============================
+            TESTIMONIALS
+    ===============================*/
+$(function () {
+    $("#testimonial-slider").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: false,
+        smartSpeed: 400,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
+    });
+});
