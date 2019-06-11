@@ -129,19 +129,20 @@
     right: 2rem;
     background-image: radial-gradient(#ff5376, #fd9aae);
     z-index: 99;
-    transition: transform .8s;
+    transition: transform .6s;
+    -webkit-transition: transform .6s;
+    -moz-transition: transform .6s;
+    -ms-transition: transform .6s;
+    -o-transition: transform .6s;
 }
 
 .navigation__nav {
     height: 100vh;
     position: fixed;
-    top: 0;
-    left: -100%;
+    bottom: -100%;
     z-index: 101;
-
     width: 100%;
     opacity: 0;
-    transition: opacity .8s;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -197,9 +198,9 @@
 
 .navigation__checkbox:checked~.navigation__nav {
     opacity: 1;
-    left: 0;
+    bottom: 5%;
 }
 
-.navigation__checkbox:checked~.navigation__buttom {
+/*.navigation__checkbox:checked~.navigation__button {
     background-color: #fff;
-}
+}*/
