@@ -38,11 +38,10 @@ body {
     -o-border-radius: 5px;
     width: 300px;
 
-    -webkit-box-shadow: 0px 3px 8px -3px rgba(0, 0, 0, 0.5)
-}
+    -webkit-box-shadow: 0px 3px 8px -3px rgba(0, 0, 0, 0.5);
 
-.producto:not(:last-child) {
-    margin-right: 2rem;
+    margin: 1.5rem;
+
 }
 
 .producto .producto-foto {
@@ -52,7 +51,20 @@ body {
     height: 150px;
 }
 
+@media screen and (max-width: 1100px) {
+    .contenedor-productos {
+        padding: 0;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 800px) {
+
+    .contenedor-productos {
+        margin: 0;
+        padding: 0;
+    }
+
     .producto .producto-foto {
         height: 100px;
     }
@@ -62,13 +74,24 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 640px) {
+
+    .producto {
+        width: 200px;
+    }
+
+    .producto-descripcion p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
     .producto .producto-foto {
         height: 100px;
     }
 
     .producto {
-        width: 142px;
+        width: 160px;
     }
 
     .contenedor {
@@ -81,16 +104,15 @@ body {
         margin: 0;
     }
 
-    .producto:last-child {
-        margin: 1rem 0;
-    }
-
-    .producto:not(:last-child) {
-        margin: 1rem 0;
-    }
-
     .producto .producto-foto span {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .producto {
+        margin: 0.5rem;
+        width: 140px;
     }
 }
 
@@ -128,5 +150,36 @@ body {
 
 .producto-descripcion {
     background-color: rgb(240, 212, 121);
-    padding: 2rem;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-descripcion p {
+    margin-top: 1.2rem;
+}
+
+/*********************************************/
+/****** BUTTON ******************************/
+
+button {
+    border: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+
+    color: rgb(41, 94, 16);
+    background-image: linear-gradient(to left, rgb(92, 236, 148), rgb(60, 233, 167));
+    padding: .7rem 1rem;
+    margin-top: 1.2rem;
+
+    align-self: flex-end;
+
+    box-shadow: 0 1px 0px 1px rgba(0, 0, 0, 0.5);
+
+    outline: none;
+    cursor: pointer;
 }
